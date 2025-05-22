@@ -28,7 +28,7 @@ const Dashboard = () => {
 
   const fetchUsers = async (token) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/users`, {
+      const response = await fetch(`${import.meta.env.VITE_API_SERVER}/users`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -69,7 +69,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`${import.meta.env.VITE_API_URL}/users/${id}`, {
+      await fetch(`${import.meta.env.VITE_API_SERVER}/users/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${getToken()}` },
       });
@@ -90,7 +90,7 @@ const Dashboard = () => {
 
   const handleEditSave = async () => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/users/${editUser.id}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_SERVER}/users/${editUser.id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${getToken()}`,

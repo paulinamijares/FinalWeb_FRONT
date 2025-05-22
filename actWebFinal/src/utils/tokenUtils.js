@@ -35,7 +35,7 @@ export const isTokenValid = async (token) => {
   }
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/login/authenticateToken`, {
+    const response = await fetch(`${import.meta.env.VITE_API_SERVER}/login/authenticateToken`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -70,7 +70,7 @@ export const loginUser = async (email, password) => {
   console.log("loginUser function called");
 
   try {
-    const url = `${import.meta.env.VITE_API_URL}/login`;
+    const url = `${import.meta.env.VITE_API_SERVER}/login`;
     console.log("Sending request to:", url);
 
     const response = await fetch(url, {

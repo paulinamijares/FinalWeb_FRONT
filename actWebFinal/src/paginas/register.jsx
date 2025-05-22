@@ -23,7 +23,7 @@ const RegistroPage = () => {
   event.preventDefault();
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/users`, {
+    const response = await fetch(`${import.meta.env.VITE_API_SERVER}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
