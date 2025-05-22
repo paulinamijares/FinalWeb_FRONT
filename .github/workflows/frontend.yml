@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Inject VITE_API_URL
-        run: echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" > .env
+      - name: Inject VITE_API_SERVER
+        run: echo "VITE_API_SERVER=${{ secrets.VITE_API_SERVER }}" > .env
 
       - name: Install dependencies
         run: npm ci
