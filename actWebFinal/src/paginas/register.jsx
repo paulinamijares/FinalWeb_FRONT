@@ -41,7 +41,7 @@ const RegistroPage = () => {
 
     // Redirigir al login o mostrar éxito
     alert("Registration successful! Please log in.");
-    window.location.href = "/login";
+    window.location.href = "/";
   } catch (error) {
     console.error("Error registering user:", error);
     alert(`Registration failed: ${error.message}`);
