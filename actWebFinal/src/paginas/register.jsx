@@ -148,7 +148,7 @@ const RegistroPage = () => {
 
           <Typography sx={{ mt: 3, textAlign: "center" }}>
             Already registered?{" "}
-            <Link href="/login" underline="hover" sx={{ color: "#d81b60", fontWeight: "bold" }}>
+            <Link href="/" underline="hover" sx={{ color: "#d81b60", fontWeight: "bold" }}>
               Sign in here
             </Link>
           </Typography>
