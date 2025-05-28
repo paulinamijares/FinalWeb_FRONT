@@ -92,6 +92,7 @@ export const loginUser = async (email, password) => {
     try {
       data = await response.json();
       console.log("API Response:", data);
+      
     } catch (jsonError) {
       console.error("Error parsing JSON:", jsonError);
       return { success: false, message: "Error parsing response data" };

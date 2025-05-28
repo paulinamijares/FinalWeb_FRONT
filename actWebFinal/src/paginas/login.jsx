@@ -56,7 +56,7 @@ const LoginPage = ({ onLoginSuccess }) => {
           fontWeight="bold"
           sx={{ typography: { xs: "h5", md: "h4" }, color: "#c2185b" }}
         >
-          Welcome Back
+         Welcome Back 
         </Typography>
 
         <Box sx={{ mt: 2, width: "100%" }}>
